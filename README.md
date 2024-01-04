@@ -12,13 +12,11 @@ BitwatchVR is an application designed to **establish a seamless connection betwe
 - Weather and Temperature
 - User's Controller Battery Level
 
-## Challenges and Solutions
-
-### Challenges
+## Challenges
 - **Limited Data Transfer Rate:** The platform that this software interacts with imposes a **1-10hz limitation on data transfer rate** (this transfer rate is dependent on certain in-game factors that are out of my control).
 - **16-Bit Data Representation:** Only 16 bits may be used to represent all the information listed above.
 
-### Solutions
+## Solutions
 - **Multi-threaded Processing:**
   - To address the **limited data transfer rate**, the application utilizes multiple **threads**, each assigned to a specific information category. 
   - This approach enables fine-grained control over local data retrieval rates for each category, ensuring the information remains as up-to-date as possible.
