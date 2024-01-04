@@ -4,8 +4,7 @@
 BitwatchVR is an application designed to **establish a seamless connection between the virtual world and the real world**. The primary goal of this project is to **allow users to stay informed about their real-world surroundings** without disrupting their virtual experiences.
 
 ## Features
-
-### Real-time Information Display
+**The following information is displayed in real time**
 - Time and Date
 - Heart Rate Monitoring
 - Weather and Temperature
