@@ -1,5 +1,7 @@
 # BitwatchVR
 
+(NOTE: **There is only one commit with code in this repository** in order to maintain my privacy. The development of this application is followed by an online community; I do not wish to directly use my professional identity online.)
+
 ## Introduction
 BitwatchVR is an application designed to **establish a seamless connection between the virtual world and the real world**. The primary goal of this project is to **allow users to stay informed about their real-world surroundings** without disrupting their virtual experiences.
 
