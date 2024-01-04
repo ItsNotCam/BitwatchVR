@@ -29,7 +29,7 @@ BitwatchVR is an application designed to **establish a seamless connection betwe
   - This technique allows efficient representation of diverse real-world information within the constraints of the 16-bit limit.
 
 ## Technology Stack
-- **C#:** The application is developed primarily in C# for robust and efficient performance.
+- **C#:** I wanted to develop this project in C# in order to learn more about the language.
 - **Web and OSC Sockets:** Web and OSC (Open Sound Control) sockets facilitate communication between the application and the platform, ensuring real-time data exchange.
 - **REST APIs:** RESTful APIs are used to fetch real-world data
 - **Multithreaded Processing:** The C# Threading library is utilized for multi-threaded processing, allowing for effective management of data retrieval rates.
