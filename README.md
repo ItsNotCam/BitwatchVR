@@ -38,7 +38,7 @@ BitwatchVR is an application designed to **establish a seamless connection betwe
 Throughout the development of this application I:
 * Deepened my understanding of C#.
 * Worked with and developed my own state machines.
-* Became familiar with mutlithreaded processing.
+* Became familiar with multithreaded processing.
 * Overcame many technical challenges by using self-taught techniques through research.
 
 Overall this project was very helpful in furthering my knowledge in many areas, and is undoubtedly the project that I am the most proud of to date (2024).
