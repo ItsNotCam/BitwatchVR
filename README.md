@@ -18,20 +18,16 @@ This information is stored on multiple "widgets" that are selectable by the user
 - Weather and Temperature
 - User's Controller Battery Level
 
-## Challenges
-- **Limited Data Transfer Rate:** The platform that this software interacts with imposes a **1-10hz limitation on data transfer rate** (this transfer rate is dependent on certain in-game factors that are out of my control).
-- **16-Bit Data Representation:** Only 16 bits may be used to represent all the information listed above.
+## Challenges and Solutions
+- **Real Time Updating:** The information that is displayed to the user must be able to be retrieved anywhere from 1 to 10 times per second, and only one piece of information can be sent at any given time. Data retrieval creates a massive bottleneck here, as it requires several seconds to retrieve all of the necessary information.
+  - The application utilizes multiple **threads**, each assigned to a specific information category (time, weather, heart rate, battery levels, etc.). Each thread is responsible for asyncronously retrieving its category of data.
+  - This allows the time-consuming portions of data retrieval to be handled separately from the main thread that communicates with the platform.
 
-## Solutions
-- **Multi-threaded Processing:**
-  - To address the **limited data transfer rate**, the application utilizes multiple **threads**, each assigned to a specific information category. 
-  - This approach enables fine-grained control over local data retrieval rates for each category, ensuring the information remains as up-to-date as possible.
-  - The application then sends this data at the limited rate
-
-- **Time Division Multiplexing:** 
-  - To overcome the **16-bit data representation** limitation, **time division multiplexing** is employed. 
-  - The **first eight bits** are used to inform the platform about the **type of information being sent**.
-  - The **remaining eight bits** are used to **represent the actual data** being transmitted.
+- **16-Bit Data Representation:** Only 16 bits may be used to represent all of the information listed above.
+  - To overcome this, I made use of a technique called "**time division multiplexing (TDM)**"
+  - TDM allows me to send each category of data sequentially in its own encapsulated "message", each containing 16 bits of data.
+  - The **first 8 bits** of each message are used to inform the platform about the **type of information being sent**.
+  - The **remaining 8 bits** of each message are used to **represent the actual data** being transmitted.
   - This technique allows efficient representation of diverse real-world information within the constraints of the 16-bit limit.
 
 ## Technology Stack
