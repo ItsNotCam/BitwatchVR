@@ -27,7 +27,7 @@ This information is stored on multiple "widgets" that are selectable by the user
   - To overcome this, I made use of a technique called "**time division multiplexing (TDM)**"
   - TDM allows me to send each category of data sequentially in its own encapsulated "message", each containing 16 bits of data.
   - The **first 8 bits** of each message are used to inform the platform about the **type of information being sent**, and the **remaining 8 bits** of each message are used to **represent the actual data** being transmitted.
-  - This information is then decoded and temporarily stored by the client
+  - This information is then decoded and temporarily stored by the client until it is updated.
   - This technique allows efficient representation of diverse real-world information within the constraints of the 16-bit limit.
 
 ## Technology Stack
