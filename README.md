@@ -7,11 +7,9 @@ The Watch, UI, and the front and back end software is all created from scratch b
 
 NOTE: **There is only one commit with code in this repository** due to the fact that the official development of this application and the GitHub account associated with it is followed by a large online community; I do not wish to directly use my professional identity online
 
-## Displaying the Time to the User
-![image](https://github.com/ItsNotCam/BitwatchVR/assets/46014191/59ce1536-9830-4381-be43-2eec0aa03cb2)
-
-## Displaying the Weather to the User
-![image](https://github.com/ItsNotCam/BitwatchVR/assets/46014191/705eaaee-bd08-4c23-b11d-f899312edbf6)
+## Displaying the Time and Weather to the User
+This information is stored on multiple "widgets" that are selectable by the user
+![image](https://github.com/ItsNotCam/BitwatchVR/assets/46014191/4f8ae9a8-53a9-40f1-89e6-c566023a90de)
 
 ## Features
 **The following information is displayed in real time**
