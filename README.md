@@ -1,6 +1,8 @@
 # BitwatchVR
 
-(NOTE: **There is only one commit with code in this repository** due to the fact that the official development of this application and the GitHub account associated with it is followed by an online community; I do not wish to directly use my professional identity online)
+NOTE: **There is only one commit with code in this repository** due to the fact that the official development of this application and the GitHub account associated with it is followed by an online community; I do not wish to directly use my professional identity online
+
+(https://github.com/ItsNotCam/BitwatchVR/assets/46014191/1a034f9b-c3a5-4184-ac9a-b82b98a1ef77)
 
 ## Introduction
 BitwatchVR is an application designed to **establish a seamless connection between the virtual world and the real world**. The primary goal of this project is to **allow users to stay informed about their real-world surroundings** without disrupting their virtual experiences.
