@@ -24,7 +24,7 @@ This information is stored on multiple "widgets" that are selectable by the user
   - The application utilizes multiple **threads**, each assigned to a specific information category (time, weather, heart rate, battery levels, etc.). Each thread is responsible for asyncronously retrieving its category of data, which the main thread then reads from.
   - This allows the time-consuming portion of data retrieval to be handled separately from the main thread that communicates with the client.
 
-- **16-Bit Data Representation:** Only 16 bits may be used to represent all of the information listed above.
+- **16-Bit Data Representation:** Only 16 *total* bits may be used to represent all of the information listed above.
   - To overcome this, I made use of a technique called "**time division multiplexing (TDM)**"
   - TDM allows me to send each category of data sequentially in its own encapsulated "message", each containing 16 bits of data.
   - The **first 8 bits** of each message are used to inform the platform about the **type of information being sent**, and the **remaining 8 bits** of each message are used to **represent the actual data** being transmitted.
