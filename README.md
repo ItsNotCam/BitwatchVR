@@ -1,4 +1,4 @@
-# BitwatchVR
+# ⌚ BitwatchVR
 
 ## Introduction
 BitwatchVR is an application designed to establish a seamless connection between the virtual world and the real world. The primary goal of this project is to allow users to stay informed about their real-world surroundings without disrupting their virtual experiences. To solve this, **BitwatchVR displays pertinent real-world information on a watch that is worn on the user's virtual wrist** (displayed below). **Scroll down for the technology stack that I used and for more information.**
